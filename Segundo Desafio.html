@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Desafio Do Felipão</title>
+</head>
+<body>
+    <script>
+        var vit = Number(window.prompt(`Digite o numero de vitorias obtidas!`))
+        var der = Number(window.prompt(`Digite o numero de derrotas obitdas!`))
+        var resultado = vit - der 
+        document.writeln(`<h2>Calculando partidas ranqueadas</br><h2>`)
+        document.writeln(`Em sua ardua jornada você obteve ${vit} vitórias e ${der} derrotas</br>`)
+        document.writeln(`</br>`)
+        
+        if (resultado <= 10){
+            document.writeln(`sua posição nas partidas ranqueadas é <h2><strong>FERRO</strong></h2> `)
+        }else if(resultado >= 11 && resultado <=20){
+            document.writeln(`sua posição nas partidas ranqueadas é <h2><strong>BRONZE</strong></h2> `)
+        }else if(resultado >= 21 && resultado <=50){
+            document.writeln(`sua posição nas partidas ranqueadas é <h2><strong>PRATA</strong></h2> `)
+        }else if(resultado >= 51 && resultado <=80){
+            document.writeln(`sua posição nas partidas ranqueadas é <h2><strong>OURO</strong></h2> `)
+        }else if(resultado >= 81 && resultado <=90){
+            document.writeln(`sua posição nas partidas ranqueadas é <h2><strong>DIAMANTE</strong></h2> `)
+        }else if(resultado >= 91 && resultado <=100){
+            document.writeln(`sua posição nas partidas ranqueadas é <h2><strong>LENDÁRIO</strong></h2> `)
+        }else{
+            document.writeln(`sua posição nas partidas ranqueadas é <h2><strong>IMORTAL</strong></h2> `)
+        }
+
+        
+        
+    </script>
+
+</body>
+</html>
